@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Pawar's Portfolio</title>
+
+    <style>
+      .certification-section {
+          text-align: center;
+      }
+      .certification-section h1 {
+          margin-bottom: 20px;
+      }
+      .certification-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+      .certification-item {
+          text-align: center;
+      }
+      .certification-item img {
+          width: 100px;
+          height: auto;
+          margin-bottom: 10px;
+      }
+
+      .certification-item-img
+      {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+
+.experience-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0078D7;
+}
+
+.company {
+    margin-bottom: 30px;
+}
+
+.company h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0078D7;
+}
+
+.company .role {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company .duration {
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding-left: 20px;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+.project h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.project ul li {
+  margin-bottom: 5px;
+  text-indent: 1em;
+}
+
+  </style>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- SplideJs Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="animate__animated animate__slideInDown">
+        <div class="container">
+          <h1 class="header__logo">
+            <a href="#home"> Vijay </a>
+          </h1>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#certification">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__resume">
+            <a class="btn btn--main" href="Vijay Pawar_Resume.pdf" download="Vijay Pawar_Resume.pdf">
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </div>
+          <div class="header__mobile">
+            <button id="navigation-button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="section__header section__header--center">
+            <h2 class="section__title">Vijay Uday Pawar</h2>
+            <p class="section__subtitle">Software Engineer</p>
+          </div>
+
+          <div class="hero__img" style="background-image: url('assets/curve.png')">
+            <div class="hero__imgCircle animate__animated animate__slideInUp">
+              <img src="Media/Vijay_Photo.png" alt="Profile Picture" />
+            </div>
+          </div>
+
+          <div class="hero__social animate__animated animate__slideInUp">
+            <ul class="social">
+              <li>
+                <a href="https://www.linkedin.com/in/pawarvijay1070/"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/pawarvijay1070/"><i class="bi bi-github"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ronakkjain77"><i class="fa-brands fa-hackerrank"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about" style="text-align:justify;">
+            <p class="about__bio">Hello! I'm Vijay, a passionate coder with 4.5 years of experience as a software developer, focused on solving problems and building impactful solutions. My tech journey started in college, and after graduating, I began my career as a Junior Java Developer with Tata Consultancy Services (TCS) in December 2013. Over 2.5 years, I gained valuable business insights and coding experience that laid the foundation for my career.</p>
+    
+            <p class="about__bio">In 2016, I shifted to managing my family’s consulting business for MSMEs, refining my business and project management skills over six years. Yet, my passion for coding never faded, leading me back to the tech world in September 2022. At Skanda Media Services, I had the incredible opportunity to lead an AI/ML project that has been a game-changer in the media industry and also won silver Award at the  Digital Media World - AEAF Awards </p>
+                
+            <p class="about__bio">I also have a strong interest in finance, and during the lockdown, I cleared the CFA Level 1 exam, blending my love for technology and finance.</p>
+                
+            <p class="about__bio">With expertise in tech, business, and finance, I’m excited to tackle new challenges and build innovative solutions. Let’s connect and create something extraordinary!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experince Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Experince</h2>
+        </div>
+        <!-- Company 1 -->
+        <div class="company">
+          <h3>1. Skandha Media Services PL, Mumbai</h3>
+            <div class="role">Role: SDE-II</div>
+            <div class="duration">Sep 2022 - Dec 2024</div>
+              <div class="projects">
+                <div class="project">
+                  <h4>a. Evince – AI/ML tool for graphic detection</h4>
+                  <ul>
+                    <li>• Developed and implemented monitoring system with machine learning models, resulting in elimination of human intervention and elimination of manual error by 100%</li>
+                    <li>• Utilized popular libraries and frameworks such as TensorFlow and OpenCV for model development and evaluation.</li>
+                    <li>• Participated in code reviews, providing constructive feedback and ensuring code quality and best practices.</li>
+                    <li>• Optimized models to achieve high accuracy and efficiency, considering factors like computational cost and explainability.</li>
+                    <li>• Collaborated with cross-functional teams to integrate ML models into production.</li>
+                  </ul>
+                </div>
+
+                <div class="project">
+                  <h4>b. Monitoring Dashboard using Kafka, ELK and Spring boot</h4>
+                  <ul>
+                    <li>• Designed and development of a real-time log monitoring Dashboard</li>
+                    <li>• Effectively visualized and reported insights from large, diverse data </li>
+                    <li>• Worked on data preprocessing tasks, cleaning and transforming datasets to extract meaningful insights.</li>
+                  </ul>
+                </div>
+
+                <div class="project">
+                  <h4>c. Log converter using Spring boot</h4>
+                  <ul>
+                    <li>• Creating “.csv” logs from raw logs dashboard</li>
+                    <li>• Enhance data processing and reporting for efficient management</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+        <!-- Company 2 -->
+        <div class="company">
+          <h3>2. MSME Business Solution, Mumbai</h3>
+          <div class="role">Role: Process Head</div>
+          <div class="duration">Aug 2016 - Sep 2022</div>
+          <div class="projects">
+              <div class="project">
+                <ul>
+                  <li>• Mainly responsible for reviewing documents and preparing reports as per the government requirement.</li>
+                  <li>• Client and Government Department communication.</li>
+                  <li>• Resolving queries raised by concerned Department</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+
+        <!-- Company 3 -->
+        <div class="company">
+          <h3>3. Tata Consultancy Services, Mumbai</h3>
+          <div class="role">Role: Associate Java Developer</div>
+          <div class="duration">Dec 2013 - July 2016</div>
+          <div class="projects">
+              <div class="project">
+                <ul>
+                  <li>• Design, developed and maintained backend systems using Java</li>
+                  <li>• Implemented unit and integration tests using Junit.</li>
+                  <li>• Collaborated with cross-functional teams to deliver high quality software.</li>
+                  <li>• Contributed to the improvement of existing application by refactoring code & optimizing performance.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section class="section animate__animated animate__slideInUp" id="portfolio">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Projects</h2>
+        </div>
+        <div class="portfolio">
+          <div class="card" style="width: 23rem; background-color: white;padding-left: 10px; padding-right:10px;padding-top: 10px; padding-bottom: 10px; border-radius: 5%;">
+            <img style="height: 30rem;" class="card-img-top" src="Media/smartcontact.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Smart Contact Manager</h5>
+              <p class="card-text">Java Spring boot Project with Hibernate, Database interaction, Thymeleaf</p>
+              <a href="https://github.com/pawarvijay1070/smartContactManager" style="color: #0078D7;">Open project >></a>
+            </div>
+          </div>
+          <div class="card" style="width: 23rem; background-color: white; padding-left: 10px; padding-right:10px;padding-top: 10px; padding-bottom: 10px; border-radius: 5%;">
+            <img style="height: 30rem;" class="card-img-top" src="Media/stockmarket.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Stock Price Prediction</h5>
+              <p class="card-text">Python with Machine Learning project tha predicts the price of the stock</p>
+              <div class="text-center">
+                <a href="https://github.com/pawarvijay1070/smartPricePrediction" style="color: #0078D7;">Open project >></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card " style="width: 23rem; background-color: white;padding-left: 10px; padding-right:10px ;padding-top: 10px; padding-bottom: 10px; border-radius: 5%;">
+            <img style="height: 30rem;" class="card-img-top" src="Media/Stock_market_portfolio.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Stock Market Portfolio Tracker</h5>
+              <p class="card-text">Java Spring boot Project with API Consumption, Database interaction</p>
+              <a href="https://github.com/pawarvijay1070/stockMarketPortfolioTracker" style="color: #0078D7;">Open project >></a>
+            </div>
+          </div>
+
+          <div class="card " style="width: 23rem; background-color: white;padding-left: 10px; padding-right:10px ;padding-top: 10px; padding-bottom: 10px; border-radius: 5%;">
+            <img style="height: 30rem;" class="card-img-top" src="Media/currencyconverter.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Currency Converter</h5>
+              <p class="card-text">Javascript, HTML, CSS Project, that help to get currency conversion </p>
+              <a href="https://github.com/pawarvijay1070/Currencyconverter" style="color: #0078D7;">Open project >></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="section" id="certification">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Certifications</h2>
+        </div>
+            
+        <div class="certification-section">
+          <div class="certification-container">
+              <div class="certification-item">
+                  <img class="certification-item-img" src="Media/GoogleCloud.png" alt="Certification 1 Logo">
+                  <p>Associate Cloud Engineer</p>
+                  <p>Google Cloud</p>
+              </div>
+              <div class="certification-item">
+                  <img class="certification-item-img" src="Media/CFAInstitue.png" alt="Certification 2 Logo">
+                  <p>CFA Level 1</p>
+                  <p>CFA Institute®</p>
+              </div>
+              <div class="certification-item">
+                  <img class="certification-item-img" src="Media/ExcelR.png" alt="Certification 3 Logo">
+                  <p>Python for AI/ML</p>
+                  <p>ExcelR</p>
+              </div>
+              <div class="certification-item">
+                  <img class="certification-item-img" src="Media/CFI.png" alt="Certification 4 Logo">
+                  <p>Accounting Fundamentals</p>
+                  <p>Corporate Finance Institute®</p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Skills</h2>
+        </div>
+        <div class="about">
+            <ul class="about__skillsList">
+              <li>Python</li>
+              <li>Java</li>
+              <li>Spring boot</li>
+              <li>Django</li>
+              <li>SQL</li>
+              <li>Machine Learning</li>
+              <li>Artificial Intelligence</li>
+              <li>Web Development</li>
+              <li>Testing & Debugging</li>
+              <li>GCP</li>
+              <li>AWS</li>
+              <li>Data Analysis</li>
+              <li>ELK</li>
+              <li>Tableau</li>
+              <li>Kafka</li>
+              <li>Git & GitHub</li>
+              <li>MS Office</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <div class="section__header ">
+              <h2 class="section__title">Contact Me</h2>
+            </div>
+            <div class="contact__info">
+              <!-- <p>Mobile:</p> -->
+              <i class="fa-solid fa-mobile-screen-button fa-2x"></i><a style="margin-left: 15px;">+91 8082183568</a>
+            </div>
+            <div class="contact__info">
+              <!-- <p>Email Me:</p> -->
+              <i class="fa-regular fa-envelope fa-2x"></i><a href="mailto:" style="margin-left: 15px;">pawarvijay1070@gmail.com</a>
+            </div>
+            <div class="contact__info">
+              <!-- <p>Location:</p> -->
+              <i class="fa-regular fa-location-dot fa-2x"></i><a class="ml-5" style="margin-left: 15px;">Mumbai, Maharashtra, India</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Follow Me:</p>
+              <ul class="social">
+                <li>
+                  <a href="https://www.linkedin.com/in/pawarvijay1070/"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/pawarvijay1070/"><i class="bi bi-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/ronakkjain77"><i class="fa-brands fa-hackerrank"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>Made with &hearts; by <a href="#">Vijay</a></p>
+      </div>
+    </footer>
+    <!-- SplideJs v3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- App Scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>
